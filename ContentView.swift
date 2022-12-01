@@ -29,7 +29,6 @@ struct ContentView: View {
                         print("personal setting")
                     } label: {
                         Image(systemName: "person.fill")
-                            .foregroundColor(.red)
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
