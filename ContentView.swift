@@ -19,7 +19,8 @@ struct ContentView: View {
                 ForEach(movieName.indices, id: \.self) { x in
                     NavigationLink(destination: DetailView(name: movieName[x], image: movieImage[x], score: "IMDb 評分 : \(movieScore[x])"), label: {
                         MovieView(image: movieImage[x], name: movieName[x], date: movieDate[x])}
-                    )}
+                    )
+                }
             }
             .navigationTitle(Text("電影推薦"))
             .toolbar(content: {
